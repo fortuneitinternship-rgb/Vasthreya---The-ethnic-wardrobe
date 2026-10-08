@@ -3,17 +3,12 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
-      {/* Notification Bar */}
       <div className="notification-bar">
         Flat 10% Off on Your First Order — Shop Now
       </div>
-
-      {/* Main Navbar */}
       <nav className="navbar navbar-expand-lg vasthreya-navbar">
 
         <div className="container">
-
-          {/* Logo */}
           <Link className="navbar-brand" to="/">
             <img
               src="/images/vasthreya.png"
@@ -36,8 +31,6 @@ function Navbar() {
             className="collapse navbar-collapse"
             id="vasthreyaNavbar"
           >
-
-            {/* Main Menu */}
             <ul className="navbar-nav mx-auto">
 
               <li className="nav-item">
@@ -71,8 +64,6 @@ function Navbar() {
               </li>
 
             </ul>
-
-            {/* Search Bar */}
             <div className="navbar-search">
               <input
                 type="text"
@@ -83,8 +74,6 @@ function Navbar() {
                 <i className="bi bi-search"></i>
               </button>
             </div>
-
-            {/* Right Side */}
             <div className="navbar-actions">
 
               <Link to="/track-order">
