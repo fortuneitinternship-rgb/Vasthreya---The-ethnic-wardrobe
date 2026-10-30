@@ -26,7 +26,7 @@ function Cart() {
             <div className="cart-item">
 
               <img
-                src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=400&q=80"
+                src="src/assets/images/pic1.png"
                 alt="Royal Banarasi Silk Saree"
               />
 

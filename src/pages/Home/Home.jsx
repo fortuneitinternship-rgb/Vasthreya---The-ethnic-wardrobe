@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import ProductCard from "../../components/ProductCard/ProductCard";
 
@@ -41,7 +42,7 @@ function Home() {
   return (
     <div>
 
-      {/* HERO */}
+      {/* HERO SECTION */}
 
       <section className="hero-section">
 
@@ -64,10 +65,10 @@ function Home() {
               </h2>
 
               <div className="hero-flower">
-                <i className="bi bi-flower1"></i>
+                <i className="bi bi-flower3"></i>
               </div>
 
-              <p>
+              <p className="hero-tagline">
                 Where Tradition Meets Timeless Elegance
               </p>
 
@@ -98,9 +99,7 @@ function Home() {
 
             <p>Discover Our Collection</p>
 
-            <h2>
-              Explore Our Collections
-            </h2>
+            <h2>Explore Our Collections</h2>
 
             <span>
               Discover elegant ethnic wear designed
@@ -111,79 +110,40 @@ function Home() {
 
           <div className="row g-4">
 
-            {/* Sarees */}
-
             <div className="col-lg-3 col-md-6">
-
-              <Link
-                to="/products"
-                className="collection-card"
-              >
-
+              <Link to="/products" className="collection-card">
                 <div className="collection-overlay">
                   <h3>Sarees</h3>
                   <span>Explore Collection</span>
                 </div>
-
               </Link>
-
             </div>
 
-
-            {/* Half Sarees */}
-
             <div className="col-lg-3 col-md-6">
-
-              <Link
-                to="/products"
-                className="collection-card"
-              >
-
+              <Link to="/products" className="collection-card">
                 <div className="collection-overlay">
                   <h3>Half Sarees</h3>
                   <span>Explore Collection</span>
                 </div>
-
               </Link>
-
             </div>
 
-
-            {/* Lehengas */}
-
             <div className="col-lg-3 col-md-6">
-
-              <Link
-                to="/products"
-                className="collection-card"
-              >
-
+              <Link to="/products" className="collection-card">
                 <div className="collection-overlay">
                   <h3>Lehengas</h3>
                   <span>Explore Collection</span>
                 </div>
-
               </Link>
-
             </div>
 
-
-            {/* Kurtis */}
-
             <div className="col-lg-3 col-md-6">
-
-              <Link
-                to="/products"
-                className="collection-card"
-              >
-
+              <Link to="/products" className="collection-card">
                 <div className="collection-overlay">
                   <h3>Kurtis</h3>
                   <span>Explore Collection</span>
                 </div>
-
               </Link>
-
             </div>
 
           </div>
@@ -193,7 +153,7 @@ function Home() {
       </section>
 
 
-      {/* FEATURED */}
+      {/* FEATURED PRODUCTS */}
 
       <section className="featured-section">
 
@@ -203,9 +163,7 @@ function Home() {
 
             <p>Handpicked For You</p>
 
-            <h2>
-              Featured Collection
-            </h2>
+            <h2>Featured Collection</h2>
 
           </div>
 
@@ -218,9 +176,7 @@ function Home() {
                 key={product.id}
               >
 
-                <ProductCard
-                  product={product}
-                />
+                <ProductCard product={product} />
 
               </div>
 
@@ -230,10 +186,7 @@ function Home() {
 
           <div className="text-center mt-5">
 
-            <Link
-              to="/products"
-              className="vasthreya-btn"
-            >
+            <Link to="/products" className="vasthreya-btn">
               VIEW ALL PRODUCTS
             </Link>
 
@@ -250,22 +203,13 @@ function Home() {
 
         <div className="container">
 
-          <p>
-            Special Celebration Offer
-          </p>
+          <p>Special Celebration Offer</p>
 
-          <h2>
-            FLAT 10% OFF
-          </h2>
+          <h2>FLAT 10% OFF</h2>
 
-          <h3>
-            On Your First Order
-          </h3>
+          <h3>On Your First Order</h3>
 
-          <Link
-            to="/products"
-            className="hero-button"
-          >
+          <Link to="/products" className="hero-button">
             SHOP NOW
           </Link>
 
@@ -282,13 +226,9 @@ function Home() {
 
           <div className="section-heading">
 
-            <p>
-              The Vasthreya Promise
-            </p>
+            <p>The Vasthreya Promise</p>
 
-            <h2>
-              Why Choose Vasthreya?
-            </h2>
+            <h2>Why Choose Vasthreya?</h2>
 
           </div>
 
@@ -300,9 +240,7 @@ function Home() {
 
                 <i className="bi bi-gem"></i>
 
-                <h3>
-                  Elegant Designs
-                </h3>
+                <h3>Elegant Designs</h3>
 
                 <p>
                   Beautiful ethnic designs inspired
@@ -319,9 +257,7 @@ function Home() {
 
                 <i className="bi bi-heart"></i>
 
-                <h3>
-                  Quality Collection
-                </h3>
+                <h3>Quality Collection</h3>
 
                 <p>
                   Carefully selected products designed
@@ -338,9 +274,7 @@ function Home() {
 
                 <i className="bi bi-truck"></i>
 
-                <h3>
-                  Easy Shopping
-                </h3>
+                <h3>Easy Shopping</h3>
 
                 <p>
                   Simple shopping experience with
@@ -364,9 +298,7 @@ function Home() {
 
         <div className="container">
 
-          <h2>
-            Join The Vasthreya Family
-          </h2>
+          <h2>Join The Vasthreya Family</h2>
 
           <p>
             Get updates about new collections,

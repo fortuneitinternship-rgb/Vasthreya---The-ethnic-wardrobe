@@ -1,7 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import MainLayout from "../layouts/MainLayout";
-
 import Home from "../pages/Home/Home";
 import Products from "../pages/Products/Products";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
@@ -20,33 +18,22 @@ function AppRoutes() {
       <Routes>
 
         <Route element={<MainLayout />}>
-
-          {/* Home */}
           <Route path="/" element={<Home />} />
-
-          {/* Products */}
           <Route path="/products" element={<Products />} />
 
-          {/* Product Details */}
           <Route
             path="/products/:id"
             element={<ProductDetails />}
           />
 
-          {/* Cart */}
           <Route path="/cart" element={<Cart />} />
 
-          {/* Wishlist */}
           <Route path="/wishlist" element={<Wishlist />} />
 
-          {/* Authentication */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
 
-          {/* Checkout */}
           <Route path="/checkout" element={<Checkout />} />
-
-          {/* Track Order */}
           <Route
             path="/track-order"
             element={<TrackOrder />}

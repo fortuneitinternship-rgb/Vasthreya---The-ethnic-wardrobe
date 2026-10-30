@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -7,11 +8,10 @@ function Navbar() {
         Flat 10% Off on Your First Order — Shop Now
       </div>
       <nav className="navbar navbar-expand-lg vasthreya-navbar">
-
         <div className="container">
           <Link className="navbar-brand" to="/">
             <img
-              src="/images/vasthreya.png"
+              src="src/assets/images/logo1.png"
               alt="Vasthreya"
               className="vasthreya-logo"
             />
@@ -23,6 +23,9 @@ function Navbar() {
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#vasthreyaNavbar"
+            aria-controls="vasthreyaNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
             <i className="bi bi-list"></i>
           </button>
@@ -32,7 +35,6 @@ function Navbar() {
             id="vasthreyaNavbar"
           >
             <ul className="navbar-nav mx-auto">
-
               <li className="nav-item">
                 <Link className="nav-link" to="/">
                   HOME
@@ -62,7 +64,6 @@ function Navbar() {
                   KURTIS
                 </Link>
               </li>
-
             </ul>
             <div className="navbar-search">
               <input
@@ -70,13 +71,16 @@ function Navbar() {
                 placeholder="Search products..."
               />
 
-              <button type="button">
+              <button type="button" aria-label="Search">
                 <i className="bi bi-search"></i>
               </button>
             </div>
+
+            {/* Right Side Actions */}
             <div className="navbar-actions">
 
               <Link to="/track-order">
+                <i className="bi bi-box-seam"></i>
                 Track Order
               </Link>
 
@@ -90,9 +94,10 @@ function Navbar() {
                 Cart
               </Link>
 
-              <Link to="/login">
-                <i className="bi bi-person-fill"></i>
-                Login
+              {/* Login / Register */}
+              <Link to="/login" className="login-register-link">
+                <i className="bi bi-person-circle"></i>
+                Login / Register
               </Link>
 
             </div>
