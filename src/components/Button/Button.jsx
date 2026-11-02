@@ -1,14 +1,21 @@
+
 function Button({
   children,
   type = "button",
   onClick,
-  className = ""
+  variant = "primary",
+  size = "medium",
+  disabled = false,
+  className = "",
 }) {
   return (
     <button
       type={type}
       onClick={onClick}
-      className={`vasthreya-btn ${className}`}
+      disabled={disabled}
+      className={`vasthreya-btn ${
+        size !== "medium" ? `btn-${size}` : ""
+      } ${className}`}
     >
       {children}
     </button>
